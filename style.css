@@ -2,22 +2,97 @@
     font-family: "HKNova-Medium";
     src: url("fonts/HKNova-Medium.ttf");
 }
-header img {
-    width: 200px;
-}
-.toplinks {
+a:link { color:#FFF; text-decoration:none; font-weight:normal; }
+a:visited { color: #FFF; text-decoration:none; font-weight:normal; }
+a:hover { color: #FFF; text-decoration:none; font-weight:normal; }
+a:active { color: #FFF; text-decoration:underline; font-weight:normal; }
+header {
     display: flex;
-    flex-direction: row;
+    background-image: url("https://courierexchange.co.uk/wp-content/uploads/2019/03/Hero4s2.jpg");
+    display: block;
+    height: auto;
+    background-size: cover;
+    justify-content: center;
 }
-header div {
+body{
+    text-align: center;
+}
+*{
     font-family: "HKNova-Medium";
+}
+.ontop h3, .ontop p{
+    text-align: left;
+}
+.navbar, .links{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    }
-
+    height: 60px;
+    min-height: 60px;
+    /* background-color: blueviolet; */
+    flex-direction: row;
+    flex: ;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.links{
+    justify-content: space-evenly;
+}
+.navbar img{
+    width: 180px;      /* background-color: blueviolet; */
+    left: 0;
+}
+.placeholderimg img{
+    width: auto;
+    height: 100px;
+}
 .topimgs{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    /* background-color: aqua; */
     flex-direction: row;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.topimgsreverse{
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+button{
+    width: 120px;
+    text-align: center;
+    align-items: center;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+}
+.topimgs h1{
+    color: white;
+}
+.topimgs h1, .topimgs button{
+    display: inline-block;
+    flex-direction: column;
+    /* background-color: brown; */
+    justify-content: center;
+    /* flex-direction: row; */
+    margin: auto;
+}
+.ontop{
+    display: flex;
+    flex-direction: column;
+}
+.container1{
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: 500px;
+}
+.container2{
+    background-color: yellowgreen;
+    width: 100%;
+    height: 400px;
 }
