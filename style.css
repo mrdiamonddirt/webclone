@@ -5,7 +5,7 @@
 header img {
     width: 200px;
 }
-#toplinks {
+.toplinks {
     display: flex;
     flex-direction: row;
 }
@@ -13,5 +13,11 @@ header div {
     font-family: "HKNova-Medium";
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: space-between;
+    }
+
+.topimgs{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
