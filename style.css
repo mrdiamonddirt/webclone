@@ -1,1 +1,17 @@
-@import url("fonts/HKNova-Medium.ttf");
+@font-face {
+    font-family: "HKNova-Medium";
+    src: url("fonts/HKNova-Medium.ttf");
+}
+header img {
+    width: 200px;
+}
+#toplinks {
+    display: flex;
+    flex-direction: row;
+}
+header div {
+    font-family: "HKNova-Medium";
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
