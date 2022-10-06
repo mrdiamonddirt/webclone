@@ -13,17 +13,22 @@ header {
     height: auto;
     background-size: cover;
     /* justify-content: center; */
+    max-width: 100%;
+    /* border: 15px 15px 15px 15px; */
 }
 body{
     text-align: center;
     flex-direction: column;
     margin: 0;
 }
-*{
+* {
     font-family: "HKNova-Medium";
+    overflow-x: hidden;
 }
 .ontop h3, .ontop p{
-    text-align: left;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 .navbar, .links{
     display: flex;
@@ -51,21 +56,22 @@ body{
     /* background-color: aqua; */
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 50px;
-    margin-right: 50px;
+    /* margin-left: 50px;
+    margin-right: 50px; */
 }
-body{
+body > div{
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    /* padding: auto; */
 }
-.topimgsreverse{
+.postreverse{
     display: flex;
     align-items: center;
     /* background-color: aqua; */
+    max-width: 400px;
     flex-direction: row-reverse;
     justify-content: space-around;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 button{
     width: 120px;
@@ -81,63 +87,102 @@ button{
 .topimgs h1, .topimgs button{
     display: inline-block;
     flex-direction: column;
+    text-align: center;
     /* background-color: brown; */
-    margin: auto;
+}
+.post{
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+    max-width: 400px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.post h1, .post button{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* background-color: brown; */
 }
 .ontop{
     display: flex;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
 }
 .container1{
     /* background-color: blueviolet; */
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
     align-items: center;
-    /* height: 500px; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
 }
 .container2 {
     display: flex;
     flex-direction: column;
     background-color: #282837;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
     align-items: center;
     width: 100%;
+    /* box-sizing: border-box; */
     color: white;
-    padding-bottom: 25px;
+}
+.container2 p, .container2 h4 {
+    max-width: 400px;
 }
 .tabsmain span{
     color: white;
 }
-.tabsmain button{
+.tabsmain button, .tabsmain img{
     width: 80px;
     background-color: rgba(255, 255, 255, 0);
 }
-.tabs-content img{
-    width: 250px;
+.tabimg {
+    display: flex;
+    width: auto;
     height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .ltab img{
     display: flex;
     width: 10px;
     transform: rotate(90deg);
     position: absolute;
-    left: 15px;
 }
 .rtab img{
     display: flex;
     width: 10px;
     transform: rotate(-90deg);
     position: absolute;
-    right: 15px;
+    /* right: 15px; */
 }
 .tabs-content {
     display: flex;
     flex-direction: row;
-    margin: 25px;
+    /* margin: 25px; */
+    max-width: 600px;
 }
-.placeholder{
+.appslides{
+    height: auto;
+    width: auto;
+}
+.empty{
+    height: 100px;
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+.quotemrk{
+    position: absolute;
+    left: 0;
+}
+footer{
     height: 400px;
     width: 100%;
     background-color: blueviolet;
