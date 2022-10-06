@@ -1,3 +1,3 @@
 # webclone
 
-work for codenation to demonstate understanding oh html and css
+work for codenation to demonstate understanding of html and css
